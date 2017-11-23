@@ -1,5 +1,13 @@
 Alteração 1
 
+git config --global user.name "nome"
+
+git config --global user.email "email"
+
+git clone endereço
+
+mkdir // cd
+
 git add
 
 git commit -m "<>"
@@ -12,4 +20,11 @@ git pull
 
 
 
-git clone endereço
+
+Firefox:
+
+Extensões sqlite
+
+
+
+
