@@ -9,3 +9,7 @@ git push origin master <!-- envia para o servidor -->
 git push origin master
 
 git pull
+
+
+
+git clone endereço
