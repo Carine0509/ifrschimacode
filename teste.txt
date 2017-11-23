@@ -21,7 +21,7 @@ git pull
 
 
 
-Firefox:
+Firefox: versões https://ftp.mozilla.org/pub/firefox/releases/54.0.1/win64/pt-BR/
 
 Extensões sqlite
 
