@@ -1,1 +1,11 @@
 Alteração 1
+
+git add
+
+git commit -m "<>"
+
+git push origin master <!-- envia para o servidor -->
+
+git push origin master
+
+git pull
