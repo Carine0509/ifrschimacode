@@ -28,3 +28,79 @@ Extensões sqlite
 
 
 
+
+
+
+Python
+
+pip.installl flask -- instalar gerenciador cria a aplicação web
+
+Simples:
+
+print("Hello, world!")
+
+listas = ["marcos", "vinicius"]
+
+print(listas)
+
+tuplas = (1, "marcos")
+
+print(tuplas)
+
+dicionario = {1: "marcos", "nome": "vinicius"}
+
+print(dicionario)
+
+print(listas[0])
+
+print(tuplas[0])
+
+print(dicionario["nome"])
+
+
+
+
+
+import flask
+import sqlite3
+
+DB = 'pessoa.sqlite'
+
+app = flask.Flask("chimacode")
+
+def select_all():
+	conn = sqlite3.connect(DB)
+	severino = conn.cursor()
+	
+	query = "SELECT * FROM usuario"
+	
+	resultado = severino.execute(query)
+	
+	usuario = resultado.fetchall()
+	
+	conn.close()
+	
+	return usuario
+
+@app.route('/users', methods=['GET'])
+def busca_usuario():
+	usuario = select_all()
+	
+	return flask.jsonify(usuario)
+
+if __name__ == "__main__":
+	
+	app.run(debug=True)
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
